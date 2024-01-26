@@ -7,7 +7,7 @@ from core.models import InteractiveUser, Officer
 from payer.models import Payer
 
 # If manually pasting from reportbro and you have test data, search and replace \" with '
-template = """
+template = '''
 {
     "docElements": [
         {
@@ -2955,7 +2955,7 @@ template = """
         "patternCurrencySymbol": "$"
     }
 }
-"""
+'''
 
 # All constant values used below
 ALL_USERS = -42

@@ -139,6 +139,8 @@ class ModuleConfiguration(UUIDModel):
                 layer=layer,
                 module=module
             )._cfg
+            # Print or log db_configuration before merging
+            print("db_configuration before merging:", db_configuration)
             return {**default, **db_configuration}
         except ModuleConfiguration.DoesNotExist:
             logger.info('No %s configuration, using default!' % module)
